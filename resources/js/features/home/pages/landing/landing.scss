@@ -1,0 +1,210 @@
+.homeSection {
+    & .landingSection {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 40px;
+
+        & .layout {
+            width: 100%;
+            max-width: 1300px;
+            display: flex;
+            align-items: flex-end;
+            gap: 80px;
+            padding: 0 10px;
+
+            & .content,
+            & .contentImg {
+                width: calc(50% - 40px);
+            }
+
+            & .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px 0;
+                min-height: 600px;
+
+                & .heading {
+                    padding-bottom: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+
+                    & h1 {
+                        font-size: 4.5rem;
+                        font-weight: 700;
+                        line-height: 70px;
+                        color: #9a2c12;
+                    }
+
+                    & h2 {
+                        font-size: 2.5rem;
+                    }
+
+                    & p {
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                    }
+                }
+
+                & button {
+                    width: 180px;
+                    height: 50px;
+                    border-radius: 5px;
+                    border: none;
+                    transition: all .5s ease-in-out;
+                    font-size: 20px;
+                    font-weight: 900;
+                    display: flex;
+                    align-items: center;
+                    background: #040f16;
+                    color: #f5f5f5;
+                    cursor: pointer;
+
+                    & .icon {
+                        position: absolute;
+                        height: 40px;
+                        width: 30px;
+                        margin-left: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all 0.5s;
+                    }
+
+                    & .text {
+                        transform: translateX(55px);
+                        transition: all 0.5s;
+                    }
+
+                    &:hover {
+                        box-shadow: 0 0 20px 0px #2e2e2e3a;
+
+                        .icon {
+                            width: 150px;
+                        }
+
+                        .text {
+                            opacity: 0;
+                        }
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &:active {
+                        .icon {
+                            transform: scale(0.85);
+                        }
+                    }
+                }
+            }
+
+            & .contentImg {
+                height: fit-content;
+            }
+        }
+
+        & .cta {
+            background-color: #ffebd5;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+
+            & .services {
+                padding: 0 10px;
+                width: 100%;
+                max-width: 1300px;
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+
+                & .divider{
+                    background-color: black;
+                    width: 1px;
+                    height: 100%;
+                }
+
+                & .service {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    flex: 1;
+
+                    & .serviceIcon{
+                        width: 70px;
+                        height: 70px;
+                        color: #9a2c12;
+                    }
+
+                    & .serviceCheckIcon{
+                        width: 46.55px;
+                        height: 47.55px;
+                    }
+
+                    & h3 {
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                    }
+
+                    & button {
+                        margin-top: 15px;
+                        width: 135px;
+                        height: 30px;
+                        border-radius: 5px;
+                        border: none;
+                        transition: all .5s ease-in-out;
+                        font-size: 0.9rem;
+                        display: flex;
+                        align-items: center;
+                        background: #040f16;
+                        color: #f5f5f5;
+                        cursor: pointer;
+
+                        & .icon {
+                            position: absolute;
+                            height: 40px;
+                            width: 30px;
+                            margin-left: 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: all 0.5s;
+                        }
+
+                        & .text {
+                            transform: translateX(40px);
+                            transition: all 0.5s;
+                        }
+
+                        &:hover {
+                            box-shadow: 0 0 20px 0px #2e2e2e3a;
+
+                            .icon {
+                                width: 130px;
+                            }
+
+                            .text {
+                                opacity: 0;
+                            }
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &:active {
+                            .icon {
+                                transform: scale(0.85);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

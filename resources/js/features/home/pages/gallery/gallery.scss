@@ -1,0 +1,39 @@
+.homeSection {
+
+    & .gallerySection {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        & .layout {
+            padding: 0 10px;
+            width: 100%;
+            max-width: 1300px;
+
+            & .heading {
+                margin-bottom: 30px;
+
+                & h2 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                }
+
+                & p {
+                    font-size: 1.2rem;
+                    max-width: 80%;
+                }
+            }
+
+            & .gallery {
+                columns: 300px;
+            }
+
+            & img {
+                width: 100%;
+                margin-bottom: 10px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
