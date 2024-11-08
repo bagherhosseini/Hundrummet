@@ -1,7 +1,9 @@
 name: SSH Git Pull Workflow
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main  # Only triggers on pushes to the 'main' branch
 
 jobs:
   ssh-git-pull:
