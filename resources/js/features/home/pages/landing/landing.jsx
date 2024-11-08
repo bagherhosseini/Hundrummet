@@ -14,7 +14,7 @@ export default function Landing() {
             <div className='layout'>
                 <div className='content'>
                     <div className='heading'>
-                        <h2>Bringing Convenience to Pet Care test</h2>
+                        <h2>Bringing Convenience to Pet Care test test</h2>
                         <h1>In-Home & Mobile Pet Grooming</h1>
                         <p>On-Demand, Upfront Pricing, Instant Booking, Same-Day Availability, and Expert Care for All Furry Friends</p>
                     </div>
