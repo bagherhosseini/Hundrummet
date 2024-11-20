@@ -31,7 +31,7 @@ export default function Header() {
                         {/* <li>
                             <a href="/about">About</a>
                         </li>
-                        <li className='divider' /> */ }
+                        <li className='divider' /> */}
                         <li>
                             <a href="/services">Services</a>
                         </li>
