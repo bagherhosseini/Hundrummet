@@ -23,9 +23,5 @@ jobs:
           sshpass -p "$PASSWORD" ssh -o StrictHostKeyChecking=no $USER@$SERVER << EOF
           cd /var/www/$REPO_NAME
           echo "Navigated to /var/www/$REPO_NAME"
-
-          # Add the safe.directory exception
-          git config --global --add safe.directory /var/www/$REPO_NAME
-
           git pull
           EOF
