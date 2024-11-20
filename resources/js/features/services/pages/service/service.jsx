@@ -6,6 +6,7 @@ import { FiMinus } from "react-icons/fi";
 import './service.scss';
 
 export default function Service({pageData, pageDirection}) {
+    const [desktopDirection, mobileDirection = 'column'] = pageDirection;
     const [selected, setSelected] = useState(0);
     const handleChange = (index) => {
         setSelected((prevSelected) => (prevSelected === index ? null : index));
@@ -13,8 +14,8 @@ export default function Service({pageData, pageDirection}) {
 
     return (
         <div className='serviceSection'>
-            <div className='layout' style={{ "flexDirection": pageDirection }}>
-                <img className='aboutDog' src={pageData.img} alt="Dog" />
+            <div className={`layout ${pageDirection}`}>
+                <img className={pageData.title} src={pageData.img} alt={pageData.title} />
                 <div className='textContent'>
                     <h2>{pageData.title}</h2>
                     {

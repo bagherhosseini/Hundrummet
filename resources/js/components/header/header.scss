@@ -184,3 +184,61 @@ header {
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    header {
+        & nav {
+            & .logo{
+                width: 50%;
+                position: absolute;
+                top: 56.5px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                & img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        & #burger:checked~nav {
+            .burgerContainer {
+                & .burger {
+                    & .line1 {
+                        transform: rotate(45deg);
+                        top: 0px;
+                        left: 0px;
+                    }
+
+                    & .line2 {
+                        width: 0%;
+                        opacity: 0;
+                    }
+
+                    & .line3 {
+                        transform: rotate(-45deg);
+                        top: 21px;
+                        left: 0px;
+                    }
+                }
+            }
+        }
+
+        & nav {
+            & .burgerContainer{
+                & .burger{
+                    width: 30px;
+                    height: 20px;
+
+                    & span{
+                        height: 3px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -208,3 +208,90 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .homeSection {
+        & .landingSection {
+
+            & .cta {
+
+                & .services{
+                    flex-direction: column;
+                    gap: 20px;
+
+                    & .divider{
+                        // display: none;
+                        width: 100%;
+                        height: 1px;
+                    }
+
+                    & .service {
+                        flex-direction: row;
+                        gap: 10px;
+
+                        & .serviceTextContent{
+                            width: 100%;
+                        }
+
+                        & .serviceIcon{
+                            width: 50px;
+                            height: 50px;
+                        }
+
+                        & button {
+                            float: right;
+                            height: 40px;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .homeSection {
+        & .landingSection {
+            & .layout {
+                flex-direction: column;
+
+                & .content,
+                & .contentImg {
+                    width:100%;
+                }
+
+                & .content{
+                    min-height: unset;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .homeSection {
+        & .landingSection {
+            margin-top: 30px;
+            & .layout {
+                & .content{
+                    padding-top: 0;
+                    justify-content: flex-start;
+                    & .heading{
+                        & h2{
+                            font-size: 2rem;
+                        }
+
+                        & h1{
+                            font-size: 3.5rem;
+                        }
+
+                        & p{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

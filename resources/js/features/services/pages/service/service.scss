@@ -5,6 +5,14 @@
         align-items: center;
         flex-direction: column;
 
+        & .row{
+            flex-direction: row;
+        }
+
+        & .row-reverse{
+            flex-direction: row-reverse;
+        }
+
         & .layout {
             width: 100%;
             max-width: 1300px;
@@ -14,11 +22,12 @@
             padding: 0 10px;
 
             & .textContent,
-            & .aboutDog {
+            & .Cat,
+            & .Dog{
                 width: calc(50% - 40px);
             }
 
-            & .aboutDog {
+            & .Cat, & .Dog{
                 border-radius: 10px;
             }
 
@@ -103,6 +112,32 @@
                             opacity: 1;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .servicesSection {
+        .serviceSection {
+            & .layout {
+                flex-direction: column;
+                gap: 20px;
+
+                & .Dog, .Cat{
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                & .Cat{
+                    object-position: 0 -80px;
+                }
+
+                & .textContent{
+                    width: 100%;
                 }
             }
         }

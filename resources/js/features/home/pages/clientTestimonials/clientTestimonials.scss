@@ -12,6 +12,7 @@
             max-width: 1300px;
             display: flex;
             flex-direction: row;
+            align-items: center;
             gap: 40px;
             padding: 0 10px;
         }
@@ -36,23 +37,68 @@
             }
         }
 
-        & .testimonial {
-            flex: 1;
+        & .testimonials {
             display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: center;
-            text-align: center;
 
-            & h3 {
-                font-size: 1.8rem;
-                font-weight: 700;
-                color: #9a2c12;
+            & .testimonial {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                text-align: center;
+
+                & h3 {
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    color: #9a2c12;
+                }
+
+                & .name {
+                    color: #9a2c12;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .homeSection {
+        & .clientTestimonialsSection {
+            & .layout {
+                flex-direction: column;
             }
 
-            & .name {
-                color: #9a2c12;
-                font-weight: 700;
+            & .testimonials{
+                flex-direction: column;
+                gap: 20px;
+                width: 90%;
+            }
+
+            & .heading {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h2{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .homeSection {
+        & .clientTestimonialsSection {
+            & .heading{
+                h2{
+                    font-size: 2rem;
+                    min-width: unset;
+                }
             }
         }
     }

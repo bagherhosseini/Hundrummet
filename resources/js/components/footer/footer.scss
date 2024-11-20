@@ -88,3 +88,60 @@ footer{
         }
     }
 }
+
+
+@media screen and (max-width: 1000px) {
+    footer{
+        & .layout{
+            & .map-content{
+                flex-direction: column;
+                gap: 20px;
+
+                & .content, & .map{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    footer{
+        & .layout{
+            & .map-content{
+                flex-direction: column;
+                gap: 20px;
+
+                & .content{
+                    width: 100%;
+                    padding: 0;
+
+                    & .top{
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+
+                    & .bottom{
+                        flex-direction: column;
+                        gap: 20px;
+                        align-items: flex-end;
+                        img{
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer{
+        & .layout{
+            & .copyright-creator{
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    }
+}
