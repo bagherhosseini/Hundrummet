@@ -11,7 +11,6 @@ export default function App() {
             <components.Header />
             <Routes>
                 <Route path="/" element={<pages.Home />} />
-                <Route path="/about" element={<pages.About />} />
                 <Route path="/services" element={<pages.Services />} />
             </Routes>
             <components.Footer />

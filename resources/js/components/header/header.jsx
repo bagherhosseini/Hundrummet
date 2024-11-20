@@ -28,10 +28,10 @@ export default function Header() {
                             <a href="/">Home</a>
                         </li>
                         <li className='divider' />
-                        <li>
+                        {/* <li>
                             <a href="/about">About</a>
                         </li>
-                        <li className='divider' />
+                        <li className='divider' /> */}
                         <li>
                             <a href="/services">Services</a>
                         </li>
